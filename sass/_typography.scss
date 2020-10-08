@@ -1,0 +1,17 @@
+.heading {
+    &-3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    color: $color-grey-dark-2;
+    font-family: $font-heading;
+    font-weight: 400;
+    font-size: 1.4rem;
+
+}

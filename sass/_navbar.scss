@@ -1,0 +1,59 @@
+.navbar {
+    background-color: #fff;
+    grid-column: full-start / full-end;
+}
+
+.header {
+    display: flex;
+
+    &__language {
+        color: $color-grey-dark-2;
+        font-family: $font-heading;
+        font-weight: 400;
+        font-size: 1.4rem;
+        cursor: pointer;
+        transition: span 1s;
+
+        &:hover span {
+            display: inline-block;
+            transform: translateY(.5rem);
+        }
+    }
+
+    &__language,
+    &__btn {
+        align-self: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+.search {
+    position: relative;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+        border: none;
+        width: 100%;
+        padding: 2rem 6rem;
+        margin: 2rem 4rem;
+        background-color: #fff;
+    }
+
+    &__button {
+        border: none;
+        background-color: #fff;
+        position: absolute;
+        top: 3.5rem;
+        left: 6rem;
+    }
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        fill: $color-primary;
+    }
+}

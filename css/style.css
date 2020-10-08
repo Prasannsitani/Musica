@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #777;
+  line-height: 1.6;
+  font-weight: 400; }
+
+.container {
+  display: grid;
+  grid-template-rows: min-content min-content 40vw repeat(5, min-content);
+  grid-template-columns: [sidebar-start] 25rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+::selection {
+  background-color: #fff;
+  color: var(--color-primary); }
+
+.heading-3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  color: #777;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem; }
+
+.sidebar {
+  grid-row: 1 / -1; }
+  .sidebar__logo {
+    width: 10.5rem;
+    height: 10.5rem;
+    margin: 2rem 6.5rem; }
+  .sidebar__list {
+    font-size: 1.4rem;
+    list-style: none;
+    margin-top: 1.5rem; }
+  .sidebar__item {
+    position: relative;
+    padding: 0 3rem; }
+    .sidebar__item:not(:last-child) {
+      margin-bottom: 1vh; }
+  .sidebar__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #0088ff;
+    transition: all .2s; }
+  .sidebar__item:hover::before {
+    width: 5px; }
+  .sidebar__link:link, .sidebar__link:visited {
+    text-decoration: none;
+    color: #777;
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10; }
+  .sidebar__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    fill: #0088ff; }
+  .sidebar__library {
+    margin-top: 3rem; }
+  .sidebar__playlists {
+    margin-top: 3rem; }
+
+.navbar {
+  background-color: #fff;
+  grid-column: full-start / full-end; }
+
+.header {
+  display: flex; }
+  .header__language {
+    color: #777;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: span 1s; }
+    .header__language:hover span {
+      display: inline-block;
+      transform: translateY(0.5rem); }
+  .header__language, .header__btn {
+    align-self: center;
+    margin: 1rem;
+    padding: 1rem; }
+
+.search {
+  position: relative;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .search__input {
+    border: none;
+    width: 100%;
+    padding: 2rem 6rem;
+    margin: 2rem 4rem;
+    background-color: #fff; }
+  .search__button {
+    border: none;
+    background-color: #fff;
+    position: absolute;
+    top: 3.5rem;
+    left: 6rem; }
+  .search__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: #0088ff; }
+
+.recommended {
+  background-color: #005fb3;
+  grid-column: full-start / full-end;
+  padding: 2rem 6rem;
+  font-family: "Sansita Swashed", cursive;
+  color: #fff; }
+
+.topSongs {
+  background-color: #0088ff;
+  grid-column: full-start / col-end 4; }
+
+.recent {
+  background-color: #4dacff;
+  grid-column: col-start 5 / full-end; }
+
+.radio {
+  background-color: #005fb3;
+  grid-column: full-start / full-end; }
+
+.topArtists {
+  background-color: #0088ff;
+  grid-column: full-start / full-end; }
+
+.margin-left {
+  margin-left: 3rem !important; }

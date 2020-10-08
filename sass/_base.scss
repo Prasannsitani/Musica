@@ -1,0 +1,49 @@
+// COLOR VARIABLES
+$color-primary-light: #4dacff;
+$color-primary: #0088ff;
+$color-primary-dark: #005fb3;
+
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #f4f2f2;
+$color-grey-light-3: #f0eeee;
+$color-grey-light-4: #ccc;
+
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #999;
+
+//FONT FAMILY
+$font-primary: 'Sansita Swashed', cursive;
+$font-heading: 'Open Sans', sans-serif;
+$font-primary-test: 'Peddana', serif;
+
+*,
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  //1rem = 10px
+}
+
+body {
+    font-family: $font-heading;
+    color: $color-grey-dark-2;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: min-content min-content 40vw repeat(5, min-content);
+    grid-template-columns: [sidebar-start] 25rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+::selection {
+    background-color: #fff;
+    color: var(--color-primary);
+}

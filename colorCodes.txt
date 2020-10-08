@@ -1,0 +1,22 @@
+darkest to light background blue shade 
+1 - #005fb3
+2 - #006dcc
+3 - #007ae6
+4 - #0088ff or #08f
+5 - #1a94ff
+6 - #33a0ff
+7 - #4dacff
+
+
+background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.6),
+        rgba($color-primary-dark, 0.6)),
+    url('../img/hero-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    width: 100%;
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 300;

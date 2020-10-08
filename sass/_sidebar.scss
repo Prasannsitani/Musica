@@ -1,0 +1,65 @@
+.sidebar {
+    grid-row: 1 / -1;
+
+    &__logo {
+        width: 10.5rem;
+        height: 10.5rem;
+        margin: 2rem 6.5rem;
+    }
+
+    &__list {
+        font-size: 1.4rem;
+        list-style: none;
+        margin-top: 1.5rem;
+    }
+
+    &__item {
+        position: relative;
+        padding: 0 3rem;
+        &:not(:last-child) {
+           margin-bottom: 1vh;
+        } 
+    }
+
+    &__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 0;
+        background-color: $color-primary;
+        transition: all .2s;
+    }
+
+    &__item:hover::before {
+        width: 5px;
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $color-grey-dark-2;
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        fill: $color-primary;
+    }
+
+    &__library {
+        margin-top: 3rem;
+    }
+
+    &__playlists {
+        margin-top: 3rem;
+    }
+}
