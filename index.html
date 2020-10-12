@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musica - A Music Website</title>
+
+    <!-- Bootstrap CDN -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+    <!-- Local Styling -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon Icon -->
     <link rel="shortcut icon" href="img/favicon_io (1)/favicon.ico">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet"> 
+    
+    <!-- A Player CSS Url -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+    
 </head>
 <body>
     <div class="container">
@@ -122,11 +135,88 @@
             </header>
         </div>
         <section class="recommended">
-            <h2 class="heading-2">
-                Recommended Albums
-            </h2>
+            <div class="recommended__heading">
+                <h2 class="heading-2">Recommended Albums</h2>
+            </div>
             <div class="recommended__box">
-                Boxes
+                <figure class="recommended__item">
+                    <img class="recommended__image" src="img/justin.jpg" alt="Baby Song image">
+                </figure>
+                <button class="recommended__btn">
+                    <svg class="recommended__icon">
+                        <use xlink:href="img/sprites.svg#icon-play3"></use>
+                    </svg>
+                </button>
+                <h3 class="recommended__heading heading-3">
+                    Baby
+                </h3>
+                <p class="recommended__text">
+                    Justin Bieber - 2010
+                </p>
+            </div>        
+            <div class="recommended__box">
+                <figure class="recommended__item">
+                    <img class="recommended__image" src="img/ed-sheeran-perfect.jpg" alt="Perfect Song image">
+                </figure> 
+                <button class="recommended__btn">
+                    <svg class="recommended__icon">
+                        <use xlink:href="img/sprites.svg#icon-play3"></use>
+                    </svg>
+                </button>
+                <h3 class="recommended__heading heading-3">
+                    Perfect
+                </h3>
+                <p class="recommended__text">
+                    Ed Sheeran - 2011
+                </p>
+            </div>
+            <div class="recommended__box">
+                <figure class="recommended__item">
+                    <img class="recommended__image" src="img/taylor-swift.jpg" alt="Helplessly Song image">
+                </figure>
+                <button class="recommended__btn">
+                    <svg class="recommended__icon">
+                        <use xlink:href="img/sprites.svg#icon-play3"></use>
+                    </svg>
+                </button>
+                <h3 class="recommended__heading heading-3">
+                    Blank Space
+                </h3>
+                <p class="recommended__text">
+                    Taylor Swift - 2013
+                </p>
+            </div>
+            <div class="recommended__box">
+                <figure class="recommended__item">
+                    <img class="recommended__image" src="img/it-aint-me.jpg" alt="Helplessly Song image">
+                </figure>
+                <button class="recommended__btn">
+                    <svg class="recommended__icon">
+                        <use xlink:href="img/sprites.svg#icon-play3"></use>
+                    </svg>
+                </button>
+                <h3 class="recommended__heading heading-3">
+                    It Ain't Me
+                </h3>
+                <p class="recommended__text">
+                    Selena Gomez - 2014
+                </p>
+            </div>
+            <div class="recommended__box">
+                <figure class="recommended__item">
+                    <img class="recommended__image" src="img/love_me_like_you_do.jpg" alt="Helplessly Song image">
+                </figure>
+                <button class="recommended__btn">
+                    <svg class="recommended__icon">
+                        <use xlink:href="img/sprites.svg#icon-play3"></use>
+                    </svg>
+                </button>
+                <h3 class="recommended__heading heading-3">
+                    Love Me Like You Do
+                </h3>
+                <p class="recommended__text">
+                    Ellie Golding - 2015
+                </p>
             </div>
         </section>
         <section class="topSongs">
@@ -141,6 +231,51 @@
         <section class="topArtists">
             Top Artists Section
         </section>
-    </div>    
+    </div>
+    <div id="aplayer"></div>
+    <!-- Jquery Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Audio Player CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>  
+    
+    <script>
+        const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        listFolded: true,
+        audio: [
+        {
+            name: 'Baby',
+            artist: 'Justin Bieber',
+            url: 'songs/Baby.mp3',
+            cover: 'img/justin.jpg'
+        },
+        {
+            name: 'Perfect',
+            artist: 'Ed Sheeran',
+            url: 'songs/Perfect.mp3',
+            cover: 'img/ed-sheeran-perfect.jpg'
+        },
+        {
+            name: 'Blank Space',
+            artist: 'Taylor Swift',
+            url: 'songs/Blank Space.mp3',
+            cover: 'img/taylor-swift.jpg'
+        },
+        {
+            name: "It Ain't Me",
+            artist: 'Selena Gomez',
+            url: 'songs/It Aint Me.mp3',
+            cover: 'img/it-aint-me.jpg'
+        },
+        {
+            name: 'Love Me Like You do',
+            artist: 'Ellie Golding',
+            url: 'songs/Love Me Like You Do.mp3',
+            cover: 'img/love_me_like_you_do.jpg'
+        },
+        ]
+    });
+    </script>
 </body>
 </html>

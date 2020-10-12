@@ -41,9 +41,19 @@ body {
     display: grid;
     grid-template-rows: min-content min-content 40vw repeat(5, min-content);
     grid-template-columns: [sidebar-start] 25rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    position: relative;
+    z-index: 99;
 }
 
 ::selection {
     background-color: #fff;
-    color: var(--color-primary);
+    color: red;
+}
+
+#aplayer {
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
 }

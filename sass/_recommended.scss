@@ -1,7 +1,69 @@
 .recommended {
-    background-color: $color-primary-dark;
     grid-column: full-start / full-end;
-    padding: 2rem 6rem;
-    font-family: $font-primary;
+    padding: 2rem 6rem 4rem;
+    font-family: $font-heading;
     color: #fff;
+
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 3rem;
+    align-items: start;
+
+    &__box {
+        background-color: $color-primary;
+        padding: .5rem;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 3.5rem $color-primary-dark;
+        position: relative;
+        cursor: pointer;
+        transition: all ease .4s;
+
+        &:hover {
+            box-shadow: none;
+            transform: scale(.98) translateY(5px);
+        }
+    }
+
+    &__box:hover &__btn {
+        transform: scale(.8);
+        cursor: pointer;
+    }
+
+    &__heading {
+        grid-column: 1 / -1;
+        font-size: 1.4rem;
+    }
+
+    &__image {
+        height: 17rem;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 3px;
+    }
+
+    &__btn {
+        border: none;
+        border-radius: 50%;
+        background-color: $color-primary-light;
+        padding: .5rem;
+        position: absolute;
+        bottom: 1.7rem;
+        right: .4rem;
+        transform: scale(0);
+        z-index: 10;
+        transition: all ease .4s;
+    }
+
+    &__icon {
+        fill: #fff;
+        height: 3.5rem;
+        width: 3.5rem;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 1rem;
+    }
 }

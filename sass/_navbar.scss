@@ -30,6 +30,7 @@
 
 .search {
     position: relative;
+    width: 60%;
     margin-right: auto;
     display: flex;
     align-items: center;
@@ -41,14 +42,22 @@
         padding: 2rem 6rem;
         margin: 2rem 4rem;
         background-color: #fff;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     &__button {
         border: none;
         background-color: #fff;
         position: absolute;
-        top: 3.5rem;
+        top: 3.2rem;
         left: 6rem;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     &__icon {

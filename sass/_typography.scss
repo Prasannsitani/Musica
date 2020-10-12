@@ -1,7 +1,12 @@
 .heading {
+    &-2 {
+        color: $color-primary;
+        padding-bottom: .4rem;
+        border-bottom: 2px solid $color-grey-light-3;
+    }
     &-3 {
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: 700;
         text-transform: uppercase;
     }
 }
