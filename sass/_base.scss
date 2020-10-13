@@ -50,10 +50,55 @@ body {
     color: red;
 }
 
+.playerIcon {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    z-index: 101;
+    position: absolute;
+    bottom: 6rem;
+    right: .5rem;
+    fill: $color-grey-dark-3;
+    transform: rotate(135deg);
+    opacity: 0;
+    transition: opacity .4s .4s;
+}
+
+.playerIcon.showIcon {
+    opacity: 1;
+    cursor: pointer;
+}
+
 #aplayer {
     margin: 0;
     position: fixed;
-    bottom: 0;
+    bottom: -100%;
+    left: 0;
     width: 100%;
     z-index: 100;
+    box-shadow: 0 -2px 2px #dadada;
+    background-color: #fff;
+    transition: all ease .5s;
+}
+#aplayer.showPlayer {
+    bottom: 0;
+}
+
+.aplayer span {
+    color: $color-grey-dark-3 !important;
+    font-size: 1.5rem;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
+    background-color: #e0e0e0 !important;
+    height: 4px;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
+    height: 4px;
+    background-color: $color-primary-dark !important;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
+    background-color: $color-primary-dark !important;
 }

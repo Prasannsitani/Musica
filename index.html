@@ -138,7 +138,7 @@
             <div class="recommended__heading">
                 <h2 class="heading-2">Recommended Albums</h2>
             </div>
-            <div class="recommended__box">
+            <div class="recommended__box" data-switch="0">
                 <figure class="recommended__item">
                     <img class="recommended__image" src="img/justin.jpg" alt="Baby Song image">
                 </figure>
@@ -154,7 +154,7 @@
                     Justin Bieber - 2010
                 </p>
             </div>        
-            <div class="recommended__box">
+            <div class="recommended__box" data-switch="1">
                 <figure class="recommended__item">
                     <img class="recommended__image" src="img/ed-sheeran-perfect.jpg" alt="Perfect Song image">
                 </figure> 
@@ -170,7 +170,7 @@
                     Ed Sheeran - 2011
                 </p>
             </div>
-            <div class="recommended__box">
+            <div class="recommended__box"  data-switch="2">
                 <figure class="recommended__item">
                     <img class="recommended__image" src="img/taylor-swift.jpg" alt="Helplessly Song image">
                 </figure>
@@ -186,7 +186,7 @@
                     Taylor Swift - 2013
                 </p>
             </div>
-            <div class="recommended__box">
+            <div class="recommended__box" data-switch="3">
                 <figure class="recommended__item">
                     <img class="recommended__image" src="img/it-aint-me.jpg" alt="Helplessly Song image">
                 </figure>
@@ -202,7 +202,7 @@
                     Selena Gomez - 2014
                 </p>
             </div>
-            <div class="recommended__box">
+            <div class="recommended__box" data-switch="4">
                 <figure class="recommended__item">
                     <img class="recommended__image" src="img/love_me_like_you_do.jpg" alt="Helplessly Song image">
                 </figure>
@@ -220,7 +220,7 @@
             </div>
         </section>
         <section class="topSongs">
-            Top Songs Section
+            <h3 class="heading-3 heading-3--dark">Top Songs</h3>
         </section>
         <section class="recent">
             Recent Playlist
@@ -232,50 +232,20 @@
             Top Artists Section
         </section>
     </div>
-    <div id="aplayer"></div>
+    <div id="aplayer">
+    </div>
+    <svg class="playerIcon">
+        <use xlink:href="img/sprites.svg#icon-plus">
+    </svg>
     <!-- Jquery Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Audio Player CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>  
     
-    <script>
-        const ap = new APlayer({
-        container: document.getElementById('aplayer'),
-        listFolded: true,
-        audio: [
-        {
-            name: 'Baby',
-            artist: 'Justin Bieber',
-            url: 'songs/Baby.mp3',
-            cover: 'img/justin.jpg'
-        },
-        {
-            name: 'Perfect',
-            artist: 'Ed Sheeran',
-            url: 'songs/Perfect.mp3',
-            cover: 'img/ed-sheeran-perfect.jpg'
-        },
-        {
-            name: 'Blank Space',
-            artist: 'Taylor Swift',
-            url: 'songs/Blank Space.mp3',
-            cover: 'img/taylor-swift.jpg'
-        },
-        {
-            name: "It Ain't Me",
-            artist: 'Selena Gomez',
-            url: 'songs/It Aint Me.mp3',
-            cover: 'img/it-aint-me.jpg'
-        },
-        {
-            name: 'Love Me Like You do',
-            artist: 'Ellie Golding',
-            url: 'songs/Love Me Like You Do.mp3',
-            cover: 'img/love_me_like_you_do.jpg'
-        },
-        ]
-    });
-    </script>
+    <!-- Audio Player Javascript -->
+    <script src="js/player.js"></script>
 </body>
 </html>
+
+
