@@ -12,6 +12,10 @@
         &--light { color: #fff;}
         &--dark {color: $color-primary;}
     }
+    &-4 {
+        color: $color-primary;
+        font: 1.6rem;
+    }
 }
 
 .btn:link,
