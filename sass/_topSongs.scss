@@ -1,10 +1,51 @@
 .topSongs {
     grid-column: full-start / col-end 4;
-    padding: 2rem 4rem 2rem;
+    padding: 2rem 6rem 2rem;
     display: grid;
     height: min-content;
-    grid-template-columns: max-content max-content;
+    grid-template-columns: max-content;
     grid-row-gap: 1.5rem;
+    position: relative;
+
+    &__container {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 55vh;
+        display: grid;
+        grid-row-gap: 1rem;
+        transition: transform 1s,opacity .5s;
+
+        &--1 {
+            z-index: 100;
+        }
+
+        &--2,&--3 {
+            position: absolute;
+            bottom: 2rem;
+            right: 0;
+            width: 90%;
+            transform: translateX(7rem);
+            opacity: 0;
+        }
+    }
+    
+    ::-webkit-scrollbar {
+        width: 1.5rem;
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px $color-grey-dark-3; 
+        border-radius: .8rem;
+    }
+     
+    ::-webkit-scrollbar-thumb {
+    background: $color-primary; 
+    border-radius: .8rem;
+    } 
+      
+    ::-webkit-scrollbar-thumb:hover {
+    background: $color-primary-dark; 
+    }
 
     &__sections {
         width: 100%;
@@ -15,13 +56,13 @@
 
         h4 {
             font-size: 1.4rem;
-            font-weight: 400;
-            margin: 0 2rem;
+            font-weight: 700;
+            margin: 0 5.5rem;
             transition: all .4s;
 
-            &:hover {
+            &:hover,&.active {
                 color: $color-primary;
-                transform: scale(1.05) translateY(-.5rem);
+                transform: translateY(-.5rem);
                 border-bottom: 1px solid $color-primary;
                 cursor: pointer;
             }
@@ -32,22 +73,25 @@
         height: 10vh;
         display: flex;
         align-items: center;
-        width: max-content;
-        margin-right: 10vh;
+        width: 100%;
+        font-size: 1.7rem;
+        border-bottom: 2px solid $color-grey-light-3;
     }
 
     &__box {
+        display: block;
         background-color: $color-grey-light-3;
         padding: 1rem 2rem;
         height: 7rem;
         grid-column: 1 / -1;
-        width: 118%;
+        width: 100%;
         border-radius: 4px;
         display: flex;
         align-items: center;
         cursor: pointer;
         position: relative;
         transition: all .2s;
+        z-index: 10;
 
         &:hover {
             transform: scale(1.05);
@@ -77,6 +121,7 @@
         width: 5.5rem;
         border-radius: 3px;
         margin-right: 2rem;
+        object-fit: cover;
     }
 
     &__icon {
@@ -85,5 +130,84 @@
         fill: $color-primary;
         margin: 0 1rem 0 .5rem;
         cursor: pointer;
+    }
+
+    &__iconbox {
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: transparent;
+        stroke: $color-primary;
+        stroke-width: 1.5;
+        margin: 0 1rem 0 .5rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+        display: block;
+
+        svg {
+            overflow: visible;
+        }
+
+        path {
+            stroke-dashoffset: 0;
+            stroke-dasharray: 1550;
+            transform-origin: center;
+        }
+
+        &--heartBackground {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            stroke: none;
+        }
+
+        &--heartMain:hover path {
+            animation: stroke-animation 2s ease-in-out forwards;
+        }
+    }     
+}
+
+@keyframes stroke-animation {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    30% {
+        stroke-dashoffset: 1550;
+    }
+    60% {
+        stroke-dashoffset: 3100;
+        fill: transparent;
+        transform: scale(1);
+    }
+    80% {
+        fill: $color-primary;
+        transform: scale(1.1);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        stroke-dashoffset: 3100;
+        fill: $color-primary;
+    }
+}
+
+@keyframes fade-animation {
+    70% {
+        fill: transparent;
+        transform: scale(1);
+    }
+    80% {
+        fill: $color-primary-light;
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
     }
 }

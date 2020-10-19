@@ -1,4 +1,36 @@
 .recent {
-    background-color: $color-primary-light;
     grid-column: col-start 5 / full-end;
+    padding: 2rem 6rem 2rem;
+    display: grid;
+    height: min-content;
+    grid-template-columns: max-content;
+    grid-row-gap: 1.5rem;
+    position: relative;
+
+    &__mainHeading {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 1.7rem;
+        border-bottom: 2px solid $color-grey-light-3;
+    }
+
+    &__array {
+        display: block;
+        width: 100%;
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+    }
+
+    &__icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: $color-primary;
+        margin: 0 1rem 0 .5rem;
+        cursor: pointer;
+    }
 }
