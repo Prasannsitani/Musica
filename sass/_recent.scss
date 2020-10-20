@@ -1,11 +1,17 @@
 .recent {
     grid-column: col-start 5 / full-end;
-    padding: 2rem 6rem 2rem;
+    padding: 2rem 4rem 2rem;
     display: grid;
     height: min-content;
     grid-template-columns: max-content;
-    grid-row-gap: 1.5rem;
     position: relative;
+    grid-row-gap: 1.9rem;
+    border-radius: 5px;
+    border-bottom: 2px solid $color-grey-light-3;
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
 
     &__mainHeading {
         height: 10vh;
@@ -19,11 +25,17 @@
     &__array {
         display: block;
         width: 100%;
+        height: 43rem;
+        overflow: auto;
     }
 
     &__btn {
         border: none;
         background-color: transparent;
+    }
+
+    &__box {
+        position: relative;
     }
 
     &__icon {
@@ -32,5 +44,52 @@
         fill: $color-primary;
         margin: 0 1rem 0 .5rem;
         cursor: pointer;
+        position: absolute;
+        bottom: 1.5rem;
+        right: 4rem;
+    }
+
+    &__item {
+        display: inline-block;
+        height: 17rem;
+        width: 45rem;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(.5);
+        transform: scale(1.1);
+        transition: all .4s ease;
+
+        &:hover {
+            filter: brightness(1);
+            transform: scale(1);
+        }
+    }
+
+    &__heading {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 1rem;
+        color: white;
+        transition: all .4s ease;
+        cursor: pointer;
+
+        &:hover {
+            left: 2rem;
+        }
+    }
+
+    &__time {
+        color: #fff;
+        position: absolute;
+        bottom: 1.5rem;
+        right: 1rem;
+        font-size: 1.7rem;
+        font-weight: 400;
     }
 }

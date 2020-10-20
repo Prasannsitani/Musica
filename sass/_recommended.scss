@@ -13,7 +13,11 @@
         padding-top: 3rem;
         overflow: auto;
         height: 30rem;
-        width: 100%;        
+        width: 100%;   
+    }
+
+    ::-webkit-scrollbar {
+        height: 0;
     }
 
     &__box {

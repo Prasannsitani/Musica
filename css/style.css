@@ -222,6 +222,8 @@ body {
     overflow: auto;
     height: 30rem;
     width: 100%; }
+  .recommended ::-webkit-scrollbar {
+    height: 0; }
   .recommended__box {
     display: inline-block;
     width: 20rem;
@@ -268,16 +270,18 @@ body {
 
 .topSongs {
   grid-column: full-start / col-end 4;
-  padding: 2rem 6rem 2rem;
+  padding: 2rem 3rem 2rem;
   display: grid;
   height: min-content;
   grid-template-columns: max-content;
   grid-row-gap: 1.5rem;
-  position: relative; }
+  position: relative;
+  border-right: 2px solid #f0eeee;
+  border-bottom: 2px solid #f0eeee; }
   .topSongs__container {
     overflow-y: auto;
     overflow-x: hidden;
-    height: 55vh;
+    height: 43rem;
     display: grid;
     grid-row-gap: 1rem;
     transition: transform 1s,opacity .5s; }
@@ -291,7 +295,7 @@ body {
       transform: translateX(7rem);
       opacity: 0; }
   .topSongs ::-webkit-scrollbar {
-    width: 1.5rem; }
+    width: .5rem; }
   .topSongs ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px #999;
     border-radius: .8rem; }
@@ -300,16 +304,24 @@ body {
     border-radius: .8rem; }
   .topSongs ::-webkit-scrollbar-thumb:hover {
     background: #005fb3; }
+  .topSongs__header {
+    display: flex;
+    width: 50rem;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid #f0eeee; }
   .topSongs__sections {
-    width: 100%;
+    width: 80%;
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    transform: translateX(-12rem); }
     .topSongs__sections h4 {
       font-size: 1.4rem;
       font-weight: 700;
-      margin: 0 5.5rem;
+      margin: 0;
+      transform: translateY(0.5rem);
       transition: all .4s; }
       .topSongs__sections h4:hover, .topSongs__sections h4.active {
         color: #0088ff;
@@ -321,8 +333,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    font-size: 1.7rem;
-    border-bottom: 2px solid #f0eeee; }
+    font-size: 1.7rem; }
   .topSongs__box {
     display: block;
     background-color: #f0eeee;
@@ -423,12 +434,16 @@ body {
 
 .recent {
   grid-column: col-start 5 / full-end;
-  padding: 2rem 6rem 2rem;
+  padding: 2rem 4rem 2rem;
   display: grid;
   height: min-content;
   grid-template-columns: max-content;
-  grid-row-gap: 1.5rem;
-  position: relative; }
+  position: relative;
+  grid-row-gap: 1.9rem;
+  border-radius: 5px;
+  border-bottom: 2px solid #f0eeee; }
+  .recent ::-webkit-scrollbar {
+    width: 0; }
   .recent__mainHeading {
     height: 10vh;
     display: flex;
@@ -438,20 +453,143 @@ body {
     border-bottom: 2px solid #f0eeee; }
   .recent__array {
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: 43rem;
+    overflow: auto; }
   .recent__btn {
     border: none;
     background-color: transparent; }
+  .recent__box {
+    position: relative; }
   .recent__icon {
     height: 2.5rem;
     width: 2.5rem;
     fill: #0088ff;
     margin: 0 1rem 0 .5rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 4rem; }
+  .recent__item {
+    display: inline-block;
+    height: 17rem;
+    width: 45rem;
+    border-radius: 5px;
+    overflow: hidden; }
+  .recent__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    transform: scale(1.1);
+    transition: all .4s ease; }
+    .recent__image:hover {
+      filter: brightness(1);
+      transform: scale(1); }
+  .recent__heading {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+    color: white;
+    transition: all .4s ease;
     cursor: pointer; }
+    .recent__heading:hover {
+      left: 2rem; }
+  .recent__time {
+    color: #fff;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    font-size: 1.7rem;
+    font-weight: 400; }
 
 .radio {
-  background-color: #005fb3;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 6rem 6rem 0;
+  display: grid;
+  grid-row-gap: 2rem;
+  border-bottom: 2px solid #f0eeee; }
+  .radio__mainHeading {
+    font-size: 2rem;
+    font-weight: 700;
+    grid-column: 1 / -1; }
+  .radio ::-webkit-scrollbar {
+    height: 0; }
+  .radio__container {
+    height: 25rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, minmax(15rem, 1fr));
+    grid-gap: 9rem;
+    overflow: auto; }
+  .radio__box {
+    width: 100%;
+    height: min-content;
+    transition: all .4s ease; }
+  .radio__item {
+    display: block;
+    height: 22rem;
+    width: 22rem;
+    border-radius: 50%;
+    border: 2px solid #0088ff;
+    overflow: hidden;
+    position: relative; }
+  .radio__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    transition: all .5s; }
+    .radio__image:hover {
+      transform: scale(1);
+      filter: blur(3px) brightness(0.8); }
+  .radio__btn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    opacity: 0;
+    transition: all 1s;
+    cursor: pointer; }
+    .radio__btn:hover {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      background-color: #0088ff; }
+    .radio__btn:focus {
+      outline: none; }
+  .radio__image:hover + .radio__btn {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    background-color: #0088ff;
+    border-radius: 50%;
+    padding: .5rem; }
+  .radio__item:hover > .radio__image {
+    transform: scale(1);
+    filter: blur(3px) brightness(0.8); }
+  .radio__icon {
+    fill: #fff;
+    height: 3.5rem;
+    width: 3.5rem;
+    text-align: center;
+    transition: all 1s; }
+  .radio__btn:hover .radio__icon {
+    fill: #fff; }
+  .radio__heading {
+    opacity: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease; }
+  .radio__item:hover > .radio__heading {
+    top: 70%;
+    opacity: 1; }
+  .radio__item:hover > .radio__btn {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    background-color: #0088ff; }
 
 .topArtists {
   background-color: #0088ff;

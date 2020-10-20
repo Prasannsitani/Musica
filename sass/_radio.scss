@@ -1,4 +1,123 @@
 .radio {
-    background-color: $color-primary-dark;
     grid-column: full-start / full-end;
+    padding: 6rem 6rem 0;
+    display: grid;
+    grid-row-gap: 2rem;
+    border-bottom: 2px solid $color-grey-light-3;
+
+    &__mainHeading {
+        font-size: 2rem;
+        font-weight: 700;
+        grid-column: 1 / -1;
+    }
+
+    ::-webkit-scrollbar {
+        height: 0;
+    }
+
+    &__container {
+        height: 25rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10,minmax(15rem,1fr));
+        grid-gap: 9rem;
+        overflow: auto;
+    }
+
+    &__box {
+        width: 100%;
+        height: min-content;
+        transition: all .4s ease;
+    }
+
+    &__item {
+        display: block;
+        height: 22rem;
+        width: 22rem;
+        border-radius: 50%;
+        border: 2px solid $color-primary;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform: scale(1.1);
+        transition: all .5s;
+
+        &:hover {
+            transform: scale(1);
+            filter: blur(3px) brightness(.8);
+        }
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-10%);
+        opacity: 0;
+        transition: all 1s;
+        cursor: pointer;
+
+        &:hover {
+            transform: translate(-50%,-50%);
+            opacity: 1;
+            background-color: $color-primary;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__image:hover + &__btn {
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        background-color: $color-primary;
+        border-radius: 50%;
+        padding: .5rem;
+    }
+
+    &__item:hover > &__image {
+        transform: scale(1);
+        filter: blur(3px) brightness(.8);
+    }
+
+    &__icon {
+        fill: #fff;
+        height: 3.5rem;
+        width: 3.5rem;
+        text-align: center;
+        transition: all 1s;
+    }
+
+    &__btn:hover &__icon {
+        fill: #fff;
+    }
+
+    &__heading {
+        opacity: 0;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: all .5s ease;
+    }
+
+    &__item:hover > &__heading {
+        top: 70%;
+        opacity: 1;
+    }
+
+    &__item:hover > &__btn {
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        background-color: $color-primary;
+    }
+
 }
