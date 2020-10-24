@@ -39,7 +39,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: min-content min-content 40vw repeat(5, min-content);
+    grid-template-rows: repeat(2, min-content) 40vw repeat(6, min-content);
     grid-template-columns: [sidebar-start] 25rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
     position: relative;
     z-index: 99;
@@ -55,8 +55,8 @@ body {
 }
  
 ::-webkit-scrollbar-thumb {
-background: $color-primary; 
-border-radius: .8rem;
+    background: $color-primary;
+    border-radius: .8rem; 
 } 
   
 ::-webkit-scrollbar-thumb:hover {
