@@ -1,10 +1,14 @@
 .sidebar {
-    grid-row: 1 / -1;
+    position: fixed;
+    height: 100%;
+    width: 25rem;
+    z-index: 100;
     border-right: 1px solid $color-grey-light-3;
 
     &__logo {
         width: 6.5rem;
         height: 6.5rem;
+        cursor: pointer;
         margin: 2rem 8.5rem;
     }
 
@@ -17,16 +21,20 @@
     &__item {
         position: relative;
         padding: 0 3rem;
+        transition: all .2s;
         &:not(:last-child) {
            margin-bottom: 1vh;
         } 
+        &:hover {
+            transform: translateX(.5rem);
+        }
     }
 
     &__item::before {
         content: "";
         position: absolute;
         top: 0;
-        right: 0;
+        right: .5rem;
         height: 100%;
         width: 0;
         background-color: $color-primary;
@@ -41,6 +49,7 @@
     &__link:visited {
         text-decoration: none;
         color: $color-grey-dark-2;
+        cursor: pointer;
         display: block;
         width: 100%;
         display: flex;
@@ -53,6 +62,7 @@
         width: 2.5rem;
         height: 2.5rem;
         margin-right: 1rem;
+        cursor: pointer;
         fill: $color-primary;
     }
 
@@ -64,3 +74,4 @@
         margin-top: 3rem;
     }
 }
+

@@ -21,114 +21,133 @@
     
 </head>
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <img src="img/favicon_io (1)/android-chrome-512x512.png" alt="Logo" class="sidebar__logo">
+    <nav class="sidebar">
+        <img src="img/favicon_io (1)/android-chrome-512x512.png" alt="Logo" class="sidebar__logo">
+        <ul class="sidebar__list">
+            <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                    <svg class="sidebar__icon">
+                        <use xlink:href="img/sprites.svg#icon-home"></use>
+                    </svg>
+                    <span>Home</span>  
+                    </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                    <svg class="sidebar__icon">
+                        <use xlink:href="img/sprites.svg#icon-magnifying-glass"></use>
+                    </svg>
+                    <span>Browse</span>  
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar__library">
+            <h3 class="heading-3 margin-left">Library</h3>
             <ul class="sidebar__list">
                 <li class="sidebar__item">
                     <a href="#" class="sidebar__link">
                         <svg class="sidebar__icon">
-                            <use xlink:href="img/sprites.svg#icon-home"></use>
+                            <use xlink:href="img/sprites.svg#icon-back-in-time"></use>
                         </svg>
-                        <span>Home</span>  
-                      </a>
+                        <span>History</span>  
+                        </a>
                 </li>
                 <li class="sidebar__item">
                     <a href="#" class="sidebar__link">
                         <svg class="sidebar__icon">
-                            <use xlink:href="img/sprites.svg#icon-magnifying-glass"></use>
+                            <use xlink:href="img/sprites.svg#icon-music"></use>
                         </svg>
-                        <span>Browse</span>  
+                        <span>Songs</span>  
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="img/sprites.svg#icon-book"></use>
+                        </svg>
+                        <span>Albums</span>  
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="img/sprites.svg#icon-podcast"></use>
+                        </svg>
+                        <span>Podcasts</span>  
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="img/sprites.svg#icon-modern-mic"></use>
+                        </svg>
+                        <span>Artists</span>
                     </a>
                 </li>
             </ul>
-            <div class="sidebar__library">
-                <h3 class="heading-3 margin-left">Library</h3>
-                <ul class="sidebar__list">
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">
-                            <svg class="sidebar__icon">
-                                <use xlink:href="img/sprites.svg#icon-back-in-time"></use>
-                            </svg>
-                            <span>History</span>  
-                          </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">
-                            <svg class="sidebar__icon">
-                                <use xlink:href="img/sprites.svg#icon-music"></use>
-                            </svg>
-                            <span>Songs</span>  
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">
-                            <svg class="sidebar__icon">
-                                <use xlink:href="img/sprites.svg#icon-book"></use>
-                            </svg>
-                            <span>Albums</span>  
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">
-                            <svg class="sidebar__icon">
-                                <use xlink:href="img/sprites.svg#icon-podcast"></use>
-                            </svg>
-                            <span>Podcasts</span>  
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">
-                            <svg class="sidebar__icon">
-                                <use xlink:href="img/sprites.svg#icon-modern-mic"></use>
-                            </svg>
-                            <span>Artists</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        </div>
 
-            <div class="sidebar__playlists">
-                <h3 class="heading-3 margin-left margin-top">Playlists</h3>
-                <ul class="sidebar__list">
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">
-                            <svg class="sidebar__icon">
-                                <use xlink:href="img/sprites.svg#icon-plus"></use>
-                            </svg>
-                            <span>Create Playlist</span>  
-                          </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">
-                            <svg class="sidebar__icon">
-                                <use xlink:href="img/sprites.svg#icon-heart-outlined"></use>
-                            </svg>
-                            <span>Liked Songs</span>  
+        <div class="sidebar__playlists">
+            <h3 class="heading-3 margin-left margin-top">Playlists</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="img/sprites.svg#icon-plus"></use>
+                        </svg>
+                        <span>Create Playlist</span>  
                         </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="img/sprites.svg#icon-heart-outlined"></use>
+                        </svg>
+                        <span>Liked Songs</span>  
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
         <div class="navbar">
             <header class="header">
-                <form action="#" class="search">
+                <div class="search">
                     <button class="search__button">
                         <svg class="search__icon">
                             <use xlink:href="img/sprites.svg#icon-magnifying-glass"></use>
                         </svg>
                     </button>
-                    <input type="text" class="search__input" placeholder="Search for Songs Artists etc..." list="search__list">
-                    
-                </form>
-                <div class="header__language">
-                    Language <span>&#9660;</span> 
+                    <div class="search__list">
+                        <input type="text" class="search__input" placeholder="Search for Songs Artists etc...">
+                        <ul class="search__items">
+                            <li class="search__item"><a href="#" class="search__link">first 1</a></li>
+                            <li class="search__item"><a href="#" class="search__link">second 2</a></li>
+                            <li class="search__item"><a href="#" class="search__link">third 3</a></li>
+                            <li class="search__item"><a href="#" class="search__link">forth 4</a></li>
+                            <li class="search__item"><a href="#" class="search__link">Fifth 5</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <a href="#" class="btn header__btn">
+                <div class="header__language">
+                    <select>
+                        <option value="Engligh">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="German">German</option>
+                        <option value="French">French</option>
+                    </select>
+                </div>
+                <a href="#" class="btn header__btn header__login">
                     Login
+                    <svg class="header__icon">
+                        <use xlink:href="img/sprites.svg#icon-play2"></use>
+                    </svg>
                 </a>
-                <a href="#" class="btn header__btn">
+                <a href="#" class="btn header__btn header__signup">
                     Sign up
+                    <svg class="header__icon">
+                        <use xlink:href="img/sprites.svg#icon-play2"></use>
+                    </svg>
                 </a>
             </header>
         </div>
@@ -1156,6 +1175,40 @@
                 </p>
             </div>
         </footer>
+
+        <div class="login">
+            <div class="login__box">
+                <h2 class="heading-2 login__heading">Login</h2>
+                <form action="/" class="login__form">
+                    <h2 class="login__email">Email Address or Username</h2>
+                    <input type="email" class="login__email--input" placeholder="abc@xyz.com">
+                    <h2 class="login__password">Password</h2>
+                    <input type="password" class="login__password--input" placeholder="Password">
+                    <a href="#" class="login__forgot">Forgot your password</a>
+                    <button type="submit" class="login__submit">Submit</button>
+                </form>
+                <p class="login__copyright">Copyright &copy; Prasann Sitani</p>
+            </div>
+        </div>
+
+
+        <div class="signup">
+            <div class="signup__box">
+                <h2 class="heading-2 signup__heading">Sign Up</h2>
+                <form action="/" class="signup__form">
+                    <h2 class="signup__email">Email Address</h2>
+                    <input type="email" class="signup__email--input" placeholder="abc@xyz.com">
+                    <h2 class="signup__email">Username</h2>
+                    <input type="text" class="signup__email--input" placeholder="Username">
+                    <h2 class="signup__email">Password</h2>
+                    <input type="email" class="signup__email--input" placeholder="Password">
+                    <h2 class="signup__password">Confirm Password</h2>
+                    <input type="password" class="signup__password--input" placeholder="Confirm Password">
+                    <button type="submit" class="signup__submit">Sign Up</button>
+                </form>
+                <p class="signup__copyright">Copyright &copy; Prasann Sitani</p>
+            </div>
+        </div>
     </div>
     <!-- Player Extended From Aplayer Api -->
     <div id="aplayer"></div>

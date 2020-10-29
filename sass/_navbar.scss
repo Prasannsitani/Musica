@@ -6,18 +6,54 @@
 .header {
     display: flex;
 
-    &__language {
-        color: $color-grey-dark-2;
+    &__language select {
+        width: 10.8rem;
+        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+        -webkit-appearance: none;
+        background-position-x: 8.4rem;
+        color: #fff;
         font-family: $font-heading;
         font-weight: 400;
         font-size: 1.4rem;
+        background-color: $color-primary;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        border: none;
         cursor: pointer;
+        position: relative;
         transition: span 1s;
 
-        &:hover span {
-            display: inline-block;
-            transform: translateY(.5rem);
+        &:focus {
+            outline: none;
         }
+    }
+
+    &__language select option {
+        background-color: $color-grey-dark-1;
+        color: white;
+        border: none;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        transition: all .5s;
+        position: relative;
+        &:hover {
+           border-bottom: 2px solid $color-primary;
+           transform: translateY(-1rem); 
+        }
+    }
+
+    &__btn:hover ~ &__icon {
+        transform: translateX(1rem); 
+    }
+
+    &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: $color-primary;
+        margin-left: .3rem;
     }
 
     &__language,
@@ -34,17 +70,20 @@
     margin-right: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 
     &__input {
         border: none;
         width: 100%;
         padding: 2rem 6rem;
         margin: 2rem 4rem;
+        z-index: 0;
         background-color: #fff;
+        transition: all .2s;
 
         &:focus {
             outline: none;
+            color: $color-grey-dark-2;
         }
     }
 
@@ -54,6 +93,8 @@
         position: absolute;
         top: 3.2rem;
         left: 6rem;
+        z-index: 0;
+        cursor: pointer;
 
         &:focus {
             outline: none;
@@ -64,5 +105,36 @@
         height: 3rem;
         width: 3rem;
         fill: $color-primary;
+    }    
+
+    &__items {
+        height: 0;
+        display: none;
+        position: absolute;
+        top: 70%;
+        left: 11%;
+        background-color: $color-grey-dark-1;
+        width: 80%;
+        list-style: none;
+        transition: all .5s;
     }
+
+    &__item {
+        display: block;
+        padding: 1.2rem 1.6rem;
+        width: 95%;
+        margin: 1rem;
+        
+        &:hover {
+            background-color: $color-primary;
+            cursor: pointer;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        width: inherit;
+    }   
 }

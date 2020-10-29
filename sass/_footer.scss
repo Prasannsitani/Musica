@@ -1,5 +1,5 @@
 .footer {
-    background-color: $color-primary;
+    background-color: $color-grey-dark-1;
     color: #fff;
     grid-column: full-start / full-end;
     padding: 3rem 5rem 0;
@@ -17,6 +17,7 @@
     &__box {
         grid-column: 1 / -1;
         justify-self: center;
+        margin-bottom: 4.5rem;
     }
 
     &__image {
@@ -28,7 +29,7 @@
         border-top: 1px solid $color-grey-dark-3;
         padding-top: 2rem;
         display: inline-block;
-        margin-right: 8rem;
+        margin-right: 17rem;
     }
 
     &__list {
@@ -56,7 +57,7 @@
 
     &__link:hover,
     &__link:active {
-        color: red;
+        color: $color-primary;
         box-shadow: 0 1rem 2rem rgba($color-primary, .4);
         transform: rotate(5deg) scale(1.3);
     }

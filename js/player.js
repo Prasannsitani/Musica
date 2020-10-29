@@ -66,6 +66,64 @@ $('.topSongs__box').on('mouseover',function(ev) {
     })  
 })
 
+$('.search__input').on('focus',function() {
+  $('.search__items').css('display','block');
+  $('.search__items').css('height','max-content');
+  $('.search__items').css('opacity','1');
+  $('.search__items').css('z-index','100');
+  $('.search__input').css('transform','scale(1.2)');
+  $('.search__button').css('z-index','1');
+  $('.search__button').css('left','56rem');
+}).blur(function() {
+  $('.search__items').css('height','0');
+  $('.search__items').css('opacity','0');
+  $('.search__items').css('z-index','0');
+  $('.search__input').css('transform','scale(1)');
+  $('.search__button').css('z-index','1');
+  $('.search__button').css('left','6rem');
+})
+
+$('.search__button').click(function() {
+  $('.search__input').focus();
+})
+
+$('.search__input').on('keyup',function(e) {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.querySelector(".search__input");
+  filter = input.value.toUpperCase();
+  ul = document.querySelector(".search__items");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+    } else {
+        li[i].style.display = "none";
+    }
+    }
+})
+
+
+$('.header__login').click(function() {
+  $('.login').css('opacity','1');
+  $('.login').css('visibility','visible');
+  $('.login__box').css('transform','translate(-50%,-50%)');
+  $('.sidebar').css('z-index','-1');
+})
+
+$('.header__signup').click(function() {
+  $('.signup').css('opacity','1');
+  $('.signup').css('visibility','visible');
+  $('.signup__box').css('transform','translate(-50%,-50%)');
+  $('.sidebar').css('z-index','-1');
+})
+
+// var value = $(this).val().toLowerCase();
+    // $(".search__items li a").filter(function() {
+    //   $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    // });
+
 // $('.topSongs__play').on('click',function(ev) {
 //     ap.pause();
 // })

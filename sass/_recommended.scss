@@ -29,6 +29,7 @@
         box-shadow: 0 1.5rem 3.5rem $color-primary-dark;
         position: relative;
         cursor: pointer;
+        z-index: 5;
         transition: all ease .4s;
 
         &:hover {

@@ -1,0 +1,83 @@
+.login {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(#000,.8);
+    z-index: 499;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+
+    &__box {
+        color: $color-primary;
+        background-color: #fff;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-30%);
+        height: 65vh;
+        width: 65vh;
+        z-index: 500;
+        box-shadow: 0 2rem 5rem rgba(#000,.25);
+        transition: all .4s ease;
+    }
+
+    &__heading {
+        color: $color-primary;
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        font-family: $font-primary;
+    }
+
+    &__form {
+        height: 35rem;
+        display: grid;
+        grid-template-columns: max-content;
+        grid-row-gap: 1rem;
+        justify-content: center;
+        align-content: center;
+        transform: translateX(-4rem);
+    }
+
+    input {
+        width: 130%;
+        padding: 1rem 3rem 1rem 1rem;
+        color: $color-grey-dark-2;
+    }
+
+    &__forgot:link,
+    &__forgot:visited {
+        color: $color-primary;
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__forgot:hover,
+    &__forgot:active {
+        color: $color-primary-dark;
+    }
+
+    &__submit {
+        width: 130%;
+        border: none;
+        padding: 2rem 4rem;
+        background-color: $color-primary;
+        color: #fff;
+        border-radius: 100px;
+        height: 5rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+
+    &__copyright {
+        color: $color-primary;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-family: $font-primary;
+        transform: translateY(4rem);
+    }
+}
