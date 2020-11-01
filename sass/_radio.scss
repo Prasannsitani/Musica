@@ -26,7 +26,8 @@
 
     &__box {
         width: 100%;
-        height: min-content;
+        height: max-content;
+        padding: 1rem;
         transition: all .4s ease;
     }
 
@@ -38,6 +39,7 @@
         border: 2px solid $color-primary;
         overflow: hidden;
         position: relative;
+        box-shadow: 0 0rem 1rem $color-primary;
     }
 
     &__image {

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="img/favicon_io (1)/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon_io/favicon.ico">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">
@@ -22,10 +22,10 @@
 </head>
 <body>
     <nav class="sidebar">
-        <img src="img/favicon_io (1)/android-chrome-512x512.png" alt="Logo" class="sidebar__logo">
+    <img src="img/favicon_io/android-chrome-512x512.png" alt="Logo" class="sidebar__logo">
         <ul class="sidebar__list">
             <li class="sidebar__item">
-                <a href="#" class="sidebar__link">
+                <a href="/" class="sidebar__link">
                     <svg class="sidebar__icon">
                         <use xlink:href="img/sprites.svg#icon-home"></use>
                     </svg>
@@ -33,7 +33,7 @@
                     </a>
             </li>
             <li class="sidebar__item">
-                <a href="#" class="sidebar__link">
+                <a href="#" class="sidebar__link sidebar__link--search">
                     <svg class="sidebar__icon">
                         <use xlink:href="img/sprites.svg#icon-magnifying-glass"></use>
                     </svg>
@@ -121,11 +121,11 @@
                     <div class="search__list">
                         <input type="text" class="search__input" placeholder="Search for Songs Artists etc...">
                         <ul class="search__items">
-                            <li class="search__item"><a href="#" class="search__link">first 1</a></li>
-                            <li class="search__item"><a href="#" class="search__link">second 2</a></li>
-                            <li class="search__item"><a href="#" class="search__link">third 3</a></li>
-                            <li class="search__item"><a href="#" class="search__link">forth 4</a></li>
-                            <li class="search__item"><a href="#" class="search__link">Fifth 5</a></li>
+                            <li class="search__item"><a href="#" class="search__link">Best Song 2020</a></li>
+                            <li class="search__item"><a href="#" class="search__link">Devotional Songs</a></li>
+                            <li class="search__item"><a href="#" class="search__link">Selena Gomez</a></li>
+                            <li class="search__item"><a href="#" class="search__link">Bollywood Songs</a></li>
+                            <li class="search__item"><a href="#" class="search__link">Shraddha Kapoor Songs</a></li>
                         </ul>
                     </div>
                 </div>
@@ -151,14 +151,14 @@
                 </a>
             </header>
         </div>
-        <section class="recommended">
+        <section id="recommended" class="recommended">
             <div class="recommended__heading">
                 <h2 class="heading-2">Recommended Albums</h2>
             </div>
             <div class="recommended__array">
             <div class="recommended__box" data-switch="0">
                 <figure class="recommended__item">
-                    <img class="recommended__image" src="img/justin.jpg" alt="Baby Song image">
+                    <img class="recommended__image" src="img/Baby.jpg" alt="Baby Song image">
                 </figure>
                 <button class="recommended__btn">
                     <svg class="recommended__icon">
@@ -190,7 +190,7 @@
             </div>
             <div class="recommended__box"  data-switch="2">
                 <figure class="recommended__item">
-                    <img class="recommended__image" src="img/taylor-swift.jpg" alt="Helplessly Song image">
+                    <img class="recommended__image" src="img/BlankSpace.jpg" alt="Helplessly Song image">
                 </figure>
                 <button class="recommended__btn">
                     <svg class="recommended__icon">
@@ -236,9 +236,9 @@
                     Ellie Golding - 2015
                 </p>
             </div>
-            <div class="recommended__box" data-switch="4">
+            <div class="recommended__box" data-switch="5">
                 <figure class="recommended__item">
-                    <img class="recommended__image" src="img/love_me_like_you_do.jpg" alt="Love Me Like You Do image">
+                    <img class="recommended__image" src="img/SochNaSake.jpg" alt="Soch Na Sake Song image">
                 </figure>
                 <button class="recommended__btn">
                     <svg class="recommended__icon">
@@ -246,15 +246,15 @@
                     </svg>
                 </button>
                 <h3 class="recommended__heading heading-3">
-                    Love Me Like You Do
+                    Soch Na Sake
                 </h3>
                 <p class="recommended__text">
-                    Ellie Golding - 2015
+                    Arjit Singh - 2015
                 </p>
             </div>
-            <div class="recommended__box" data-switch="4">
+            <div class="recommended__box" data-switch="6">
                 <figure class="recommended__item">
-                    <img class="recommended__image" src="img/love_me_like_you_do.jpg" alt="Love Me Like You Do image">
+                    <img class="recommended__image" src="img/ChalWahanJateHai.jpg" alt="Chal Wahan Jate Hai image">
                 </figure>
                 <button class="recommended__btn">
                     <svg class="recommended__icon">
@@ -262,15 +262,15 @@
                     </svg>
                 </button>
                 <h3 class="recommended__heading heading-3">
-                    Love Me Like You Do
+                    Chal Wahan Jate Hai
                 </h3>
                 <p class="recommended__text">
-                    Ellie Golding - 2015
+                    Arjit Singh - 2015
                 </p>
             </div>  
         </div>
         </section>
-        <section class="topSongs">
+        <section id="topSongs" class="topSongs">
                 <div class="topSongs__header">
                     <h3 class="heading-3 heading-3--dark topSongs__mainHeading">Top Songs</h3>
                     <div class="topSongs__sections">
@@ -280,18 +280,18 @@
                     </div>
                 </div>
                 <div class="topSongs__container topSongs__container--1">
-                    <div class="topSongs__box" data-switch="0">
+                    <div class="topSongs__box" data-switch="7">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/justin.jpg" alt="Baby Song image">
+                            <img class="topSongs__image" src="img/HumariAdhuriKahani.jpg" alt="Humari Adhuri Kahani image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Baby
+                            Humari Adhuri Kahani
                         </h4>
                         <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Justin Bieber
+                            Arjit Singh
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            6:38
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play0">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -308,18 +308,18 @@
                             </svg>
                         </div>                            
                     </div>
-                    <div class="topSongs__box" data-switch="0">
+                    <div class="topSongs__box" data-switch="9">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/justin.jpg" alt="Baby Song image">
+                            <img class="topSongs__image" src="img/SaadiGaliAaja.jpg" alt="Saadi Galli Aaja image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Baby
+                            Saadi Galli Aaja
                         </h4>
                         <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Justin Bieber
+                            Ayushmann Khurana
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:13
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play0">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -336,18 +336,18 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="topSongs__box" data-switch="0">
+                    <div class="topSongs__box" data-switch="11">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/justin.jpg" alt="Baby Song image">
+                            <img class="topSongs__image" src="img/MarJayeen.jpg" alt="Mar Jayeen image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Baby
+                            Mar Jayeen
                         </h4>
                         <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Justin Bieber
+                            Atif Aslam
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:17
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play0">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -364,18 +364,18 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="topSongs__box" data-switch="1">
+                    <div class="topSongs__box" data-switch="13">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/ed-sheeran-perfect.jpg" alt="Perfect Song image">
+                            <img class="topSongs__image" src="img/MastMagan.jpg" alt="Mast Magan image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Perfect
+                            Mast Magan
                         </h4>
                         <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Ed Sherran
+                            Arjit Singh
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:40
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play1">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -392,18 +392,18 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="topSongs__box" data-switch="2">
+                    <div class="topSongs__box" data-switch="5">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/taylor-swift.jpg" alt="Blank Space image">
+                            <img class="topSongs__image" src="img/SochNaSake.jpg" alt="Soch Na Sake image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Blank Space
+                            Soch Na Sake
                         </h4>
                         <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Taylor Swift
+                            Arjit Singh
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:41
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play2">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -420,18 +420,18 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="topSongs__box" data-switch="3">
+                    <div class="topSongs__box" data-switch="8">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/it-aint-me.jpg" alt="It Ain't Me song image">
+                            <img class="topSongs__image" src="img/MainDhoondneKoZamaaneMein.jpg" alt="Main Dhoondne Ko Zamaane Mein image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            It Ain't Me
+                            Main Dhoondne Ko
                         </h4>
                         <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Selena Gomez
+                            Arjit Singh
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:23
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play3">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -448,18 +448,18 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="topSongs__box" data-switch="4">
+                    <div class="topSongs__box" data-switch="10">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/love_me_like_you_do.jpg" alt="Love Me Like You Do image">
+                            <img class="topSongs__image" src="img/ZindagiKuchTohBata.jpg" alt="Zindagi Kuch Toh Bata image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Love Me Like You Do
+                            Zindagi Kuch Toh Bata
                         </h4>
                         <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Ellie Golding
+                            Pritam & Jubin Nautiyal
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:23
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play4">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -480,7 +480,7 @@
                 <div class="topSongs__container topSongs__container--2">
                     <div class="topSongs__box" data-switch="0">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/justin.jpg" alt="Baby Song image">
+                            <img class="topSongs__image" src="img/Baby.jpg" alt="Baby Song image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
                             Baby
@@ -489,63 +489,7 @@
                             Justin Bieber
                         </h4>
                         <p class="topSongs__time">
-                            3:15
-                        </p>
-                        <svg class="topSongs__icon topSongs__play topSongs__icon--play0">
-                            <use xlink:href="img/sprites.svg#icon-play3">
-                        </svg>
-                        <svg class="topSongs__icon topSongs__pause topSongs__icon--play0">
-                            <use xlink:href="img/sprites.svg#icon-pause2">
-                        </svg>
-                        <div class="topSongs__iconbox">
-                            <svg class="topSongs__iconbox--heartMain" viewBox="0 0 20 20">
-                                <path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0l-1.135 1.042-1.136-1.042c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246l7.19 6.599 7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"></path>
-                            </svg>
-                            <svg class="topSongs__iconbox--heartBackground" viewBox="0 0 20 20">
-                                <path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0l-1.135 1.042-1.136-1.042c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246l7.19 6.599 7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="topSongs__box" data-switch="0">
-                        <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/justin.jpg" alt="Baby Song image">
-                        </figure>
-                        <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Baby
-                        </h4>
-                        <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Justin Bieber
-                        </h4>
-                        <p class="topSongs__time">
-                            3:15
-                        </p>
-                        <svg class="topSongs__icon topSongs__play topSongs__icon--play0">
-                            <use xlink:href="img/sprites.svg#icon-play3">
-                        </svg>
-                        <svg class="topSongs__icon topSongs__pause topSongs__icon--play0">
-                            <use xlink:href="img/sprites.svg#icon-pause2">
-                        </svg>
-                        <div class="topSongs__iconbox">
-                            <svg class="topSongs__iconbox--heartMain" viewBox="0 0 20 20">
-                                <path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0l-1.135 1.042-1.136-1.042c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246l7.19 6.599 7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"></path>
-                            </svg>
-                            <svg class="topSongs__iconbox--heartBackground" viewBox="0 0 20 20">
-                                <path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0l-1.135 1.042-1.136-1.042c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246l7.19 6.599 7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="topSongs__box" data-switch="0">
-                        <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/justin.jpg" alt="Baby Song image">
-                        </figure>
-                        <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Baby
-                        </h4>
-                        <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Justin Bieber
-                        </h4>
-                        <p class="topSongs__time">
-                            3:15
+                            3:39
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play0">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -573,7 +517,7 @@
                             Ed Sherran
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:39
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play1">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -601,7 +545,7 @@
                             Taylor Swift
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:32
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play2">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -629,7 +573,7 @@
                             Selena Gomez
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            3:41
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play3">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -657,9 +601,65 @@
                             Ellie Golding
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:09
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play4">
+                            <use xlink:href="img/sprites.svg#icon-play3">
+                        </svg>
+                        <svg class="topSongs__icon topSongs__pause topSongs__icon--play0">
+                            <use xlink:href="img/sprites.svg#icon-pause2">
+                        </svg>
+                        <div class="topSongs__iconbox">
+                            <svg class="topSongs__iconbox--heartMain" viewBox="0 0 20 20">
+                                <path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0l-1.135 1.042-1.136-1.042c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246l7.19 6.599 7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"></path>
+                            </svg>
+                            <svg class="topSongs__iconbox--heartBackground" viewBox="0 0 20 20">
+                                <path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0l-1.135 1.042-1.136-1.042c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246l7.19 6.599 7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="topSongs__box" data-switch="14">
+                        <figure class="topSongs__item">
+                            <img class="topSongs__image" src="img/LikheJoKhatTujhe.jpg" alt="Like Jo khat Tujhe image">
+                        </figure>
+                        <h4 class="heading-4 heading-4--light topSongs__upHeading">
+                            Likhe Jo Khat Tujhe
+                        </h4>
+                        <h4 class="heading-4 heading-4--dark topSongs__downHeading">
+                            Mohd. Rafi
+                        </h4>
+                        <p class="topSongs__time">
+                            4:34
+                        </p>
+                        <svg class="topSongs__icon topSongs__play topSongs__icon--play0">
+                            <use xlink:href="img/sprites.svg#icon-play3">
+                        </svg>
+                        <svg class="topSongs__icon topSongs__pause topSongs__icon--play0">
+                            <use xlink:href="img/sprites.svg#icon-pause2">
+                        </svg>
+                        <div class="topSongs__iconbox">
+                            <svg class="topSongs__iconbox--heartMain" viewBox="0 0 20 20">
+                                <path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0l-1.135 1.042-1.136-1.042c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246l7.19 6.599 7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"></path>
+                            </svg>
+                            <svg class="topSongs__iconbox--heartBackground" viewBox="0 0 20 20">
+                                <path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0l-1.135 1.042-1.136-1.042c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246l7.19 6.599 7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="topSongs__box" data-switch="12">
+                        <figure class="topSongs__item">
+                            <img class="topSongs__image" src="img/SagarJaisiAankhonWali.jpg" alt="Saagar Jaisi Aankhon Wali image">
+                        </figure>
+                        <h4 class="heading-4 heading-4--light topSongs__upHeading">
+                            Saagar Jaisi Aankhon Wali
+                        </h4>
+                        <h4 class="heading-4 heading-4--dark topSongs__downHeading">
+                            Kishor Kumar
+                        </h4>
+                        <p class="topSongs__time">
+                            5:03
+                        </p>
+                        <svg class="topSongs__icon topSongs__play topSongs__icon--play0">
                             <use xlink:href="img/sprites.svg#icon-play3">
                         </svg>
                         <svg class="topSongs__icon topSongs__pause topSongs__icon--play0">
@@ -676,18 +676,18 @@
                     </div>  
                 </div>
                 <div class="topSongs__container topSongs__container--3">
-                    <div class="topSongs__box" data-switch="0">
+                    <div class="topSongs__box" data-switch="6">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/justin.jpg" alt="Baby Song image">
+                            <img class="topSongs__image" src="img/ChalWahanJateHai.jpg" alt="Chal Wahan Jaate Hain image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Baby
+                            Chal Wahan Jaate Hain
                         </h4>
                         <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Justin Bieber
+                            Arjit Singh
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            5:26
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play0">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -704,18 +704,18 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="topSongs__box" data-switch="0">
+                    <div class="topSongs__box" data-switch="11">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/justin.jpg" alt="Baby Song image">
+                            <img class="topSongs__image" src="img/MarJayeen.jpg" alt="Mar Jaayen Song image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Baby
+                            Mar Jaayen
                         </h4>
                         <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Justin Bieber
+                            Atif Aslam
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:17
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play0">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -732,18 +732,18 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="topSongs__box" data-switch="0">
+                    <div class="topSongs__box" data-switch="19">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/justin.jpg" alt="Baby Song image">
+                            <img class="topSongs__image" src="img/Main-phir-bhi-tumko-chahunga.jpg" alt="Main Phir Bhi Tum Ko Chahunga image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Baby
+                            Phir Bhi TumKo Chahunga
                         </h4>
                         <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Justin Bieber
+                            Arjit Singh
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            5:51
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play0">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -760,18 +760,18 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="topSongs__box" data-switch="1">
+                    <div class="topSongs__box" data-switch="20">
                         <figure class="topSongs__item">
-                            <img class="topSongs__image" src="img/ed-sheeran-perfect.jpg" alt="Perfect Song image">
+                            <img class="topSongs__image" src="https://www.pagalworld.mobi/GpE34Kg9Gq/113206/thumb-wake-up-sid-300.jpg" alt="Perfect Song image">
                         </figure>
                         <h4 class="heading-4 heading-4--light topSongs__upHeading">
-                            Perfect
+                            Wake Up Sid
                         </h4>
                         <h4 class="heading-4 heading-4--dark topSongs__downHeading">
-                            Ed Sherran
+                            Unknown
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            3:51
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play1">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -799,7 +799,7 @@
                             Taylor Swift
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:32
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play2">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -827,7 +827,7 @@
                             Selena Gomez
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            3:41
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play3">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -855,7 +855,7 @@
                             Ellie Golding
                         </h4>
                         <p class="topSongs__time">
-                            3:15
+                            4:09
                         </p>
                         <svg class="topSongs__icon topSongs__play topSongs__icon--play4">
                             <use xlink:href="img/sprites.svg#icon-play3">
@@ -874,7 +874,7 @@
                     </div>  
                 </div>
             </section>
-        <section class="recent">
+        <section id="recent" class="recent">
             <div class="recent__header">
                 <h3 class="heading-3 heading-3--dark recent__mainHeading">Recent Playlist</h3>
             </div>
@@ -883,272 +883,287 @@
                     <figure class="recent__item">
                         <img class="recent__image" src="img/love_me_like_you_do.jpg" alt="Love Me Like You Do image">
                     </figure>
-                    <button class="recent__btn">
-                        <svg class="recent__icon">
-                            <use xlink:href="img/sprites.svg#icon-play3"></use>
-                        </svg>
-                    </button>
-                    <h4 class="recent__heading heading-3">
-                        Love Me Like You Do
-                    </h4>
-                    <p class="recent__time">
-                        3:15
-                    </p>
-                </div>
-                <div class="recent__box" data-switch="3">
-                    <figure class="recent__item">
-                        <img class="recent__image" src="img/taylor-swift.jpg" alt="Blank Space image">
-                    </figure>
-                    <button class="recent__btn">
-                        <svg class="recent__icon">
-                            <use xlink:href="img/sprites.svg#icon-play3"></use>
-                        </svg>
-                    </button>
-                    <h4 class="recent__heading heading-3">
-                        Blank Space
-                    </h4>
-                    <p class="recent__time">
-                        3:15
-                    </p>
-                </div>
-                <div class="recent__box" data-switch="2">
-                    <figure class="recent__item">
-                        <img class="recent__image" src="img/ed-sheeran-perfect.jpg" alt="Perfect Song image">
-                    </figure>
-                    <button class="recent__btn">
-                        <svg class="recent__icon">
-                            <use xlink:href="img/sprites.svg#icon-play3"></use>
-                        </svg>
-                    </button>
-                    <h4 class="recent__heading heading-3">
-                        Perfect
-                    </h4>
-                    <p class="recent__time">
-                        3:15
-                    </p>
-                </div>
-                <div class="recent__box" data-switch="4">
-                    <figure class="recent__item">
-                        <img class="recent__image" src="img/justin.jpg" alt="Baby Song image">
+                    <div class="recent__flex">
+                        <h4 class="recent__heading heading-3">
+                            Love Me Like You Do
+                        </h4>
                         <button class="recent__btn">
-                            <svg class="recent__icon">
+                            <svg class="recent__icon recent__pause">
+                                <use xlink:href="img/sprites.svg#icon-pause2"></use>
+                            </svg>
+                        </button>
+                        <button class="recent__btn">
+                            <svg class="recent__icon recent__play">
                                 <use xlink:href="img/sprites.svg#icon-play3"></use>
                             </svg>
                         </button>
-                        <h3 class="recent__heading heading-3">
-                            Baby
-                        </h3>
                         <p class="recent__time">
-                            3:15
+                            4:09
                         </p>
+                    </div>
+                </div>
+                <div class="recent__box" data-switch="5">
+                    <figure class="recent__item">
+                        <img class="recent__image" src="img/SochNaSake.jpg" alt="Soch Na Sake image">
                     </figure>
+                    <div class="recent__flex">
+                        <h4 class="recent__heading heading-3">
+                            Soch Na Sake
+                        </h4>
+                        <button class="recent__btn">
+                            <svg class="recent__icon recent__pause">
+                                <use xlink:href="img/sprites.svg#icon-pause2"></use>
+                            </svg>
+                        </button>
+                        <button class="recent__btn">
+                            <svg class="recent__icon recent__play">
+                                <use xlink:href="img/sprites.svg#icon-play3"></use>
+                            </svg>
+                        </button>
+                        <p class="recent__time">
+                            4:41
+                        </p>
+                    </div>
+                </div>
+                <div class="recent__box" data-switch="1">
+                    <figure class="recent__item">
+                        <img class="recent__image" src="img/ed-sheeran-perfect.jpg" alt="Perfect Song image">
+                    </figure>
+                    <div class="recent__flex">
+                        <h4 class="recent__heading heading-3">
+                            Perfect
+                        </h4>
+                        <button class="recent__btn">
+                            <svg class="recent__icon recent__pause">
+                                <use xlink:href="img/sprites.svg#icon-pause2"></use>
+                            </svg>
+                        </button>
+                        <button class="recent__btn">
+                            <svg class="recent__icon recent__play">
+                                <use xlink:href="img/sprites.svg#icon-play3"></use>
+                            </svg>
+                        </button>
+                        <p class="recent__time">
+                            4:39
+                        </p>
+                    </div>
+                </div>
+                <div class="recent__box" data-switch="9">
+                    <figure class="recent__item">
+                        <img class="recent__image" src="img/SaadiGaliAaja.jpg" alt="Saadi Gali Aaja image">
+                    </figure>
+                    <div class="recent__flex">
+                        <h3 class="recent__heading heading-3">
+                            Saadi Gali Aaja
+                        </h3>
+                        <button class="recent__btn">
+                            <svg class="recent__icon recent__pause">
+                                <use xlink:href="img/sprites.svg#icon-pause2"></use>
+                            </svg>
+                        </button>
+                        <button class="recent__btn">
+                            <svg class="recent__icon recent__play">
+                                <use xlink:href="img/sprites.svg#icon-play3"></use>
+                            </svg>
+                        </button>
+                        <p class="recent__time">
+                            4:13
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="radio">
+        <section id="radio" class="radio">
             <div class="radio__header">
                 <h2 class="heading-2 heading-2--dark radio__mainHeading"> Radio Stations </h2>
             </div>
             <div class="radio__container">
-                <div class="radio__box" data-switch="4">
+                <div class="radio__box" data-switch="15">
                     <figure class="radio__item">
-                        <img class="radio__image" src="img/justin.jpg" alt="Baby Song image">
+                        <img class="radio__image" src="img/punjabi party hits.jpg" alt="Punjabi hits image">
                         <button class="radio__btn">
                             <svg class="radio__icon">
                                 <use xlink:href="img/sprites.svg#icon-play3"></use>
                             </svg>
                         </button>
                         <h4 class="radio__heading heading-3 heading-3--light">
-                            Baby
+                            Punjabi Hits
                         </h4>
                     </figure>
                 </div>
-                <div class="radio__box" data-switch="4">
+                <div class="radio__box" data-switch="19">
                     <figure class="radio__item">
-                        <img class="radio__image" src="img/justin.jpg" alt="Baby Song image">
+                        <img class="radio__image" src="img/Romantic.jpg" alt="Romantic Hits image">
                         <button class="radio__btn">
                             <svg class="radio__icon">
                                 <use xlink:href="img/sprites.svg#icon-play3"></use>
                             </svg>
                         </button>
                         <h4 class="radio__heading heading-3 heading-3--light">
-                            Baby
+                            Romantic
                         </h4>
                     </figure>
                 </div>
-                <div class="radio__box" data-switch="4">
+                <div class="radio__box" data-switch="16">
                     <figure class="radio__item">
-                        <img class="radio__image" src="img/justin.jpg" alt="Baby Song image">
+                        <img class="radio__image" src="img/meditation.jpg" alt="Meditation image">
                         <button class="radio__btn">
                             <svg class="radio__icon">
                                 <use xlink:href="img/sprites.svg#icon-play3"></use>
                             </svg>
                         </button>
                         <h4 class="radio__heading heading-3 heading-3--light">
-                            Baby
+                            Meditation
                         </h4>
                     </figure>
                 </div>
-                <div class="radio__box" data-switch="4">
+                <div class="radio__box" data-switch="18">
                     <figure class="radio__item">
-                        <img class="radio__image" src="img/justin.jpg" alt="Baby Song image">
+                        <img class="radio__image" src="img/party-hits.png" alt="Party Hits image">
                         <button class="radio__btn">
                             <svg class="radio__icon">
                                 <use xlink:href="img/sprites.svg#icon-play3"></use>
                             </svg>
                         </button>
                         <h4 class="radio__heading heading-3 heading-3--light">
-                            Baby
+                            Party Hits
                         </h4>
                     </figure>
                 </div>
-                <div class="radio__box" data-switch="4">
+                <div class="radio__box" data-switch="20">
                     <figure class="radio__item">
-                        <img class="radio__image" src="img/justin.jpg" alt="Baby Song image">
+                        <img class="radio__image" src="img/happy feels.jpg" alt="Happy Feels image">
                         <button class="radio__btn">
                             <svg class="radio__icon">
                                 <use xlink:href="img/sprites.svg#icon-play3"></use>
                             </svg>
                         </button>
                         <h4 class="radio__heading heading-3 heading-3--light">
-                            Baby
+                            Happy Feels
                         </h4>
                     </figure>
                 </div>
-                <div class="radio__box" data-switch="4">
+                <div class="radio__box" data-switch="0">
                     <figure class="radio__item">
-                        <img class="radio__image" src="img/justin.jpg" alt="Baby Song image">
+                        <img class="radio__image" src="img/international-hits.jpg" alt="International Hits image">
                         <button class="radio__btn">
                             <svg class="radio__icon">
                                 <use xlink:href="img/sprites.svg#icon-play3"></use>
                             </svg>
                         </button>
                         <h4 class="radio__heading heading-3 heading-3--light">
-                            Baby
+                            International
                         </h4>
                     </figure>
                 </div>
-                <div class="radio__box" data-switch="4">
+                <div class="radio__box" data-switch="17">
                     <figure class="radio__item">
-                        <img class="radio__image" src="img/justin.jpg" alt="Baby Song image">
+                        <img class="radio__image" src="img/devotional-image.jpg" alt="Devotional image">
                         <button class="radio__btn">
                             <svg class="radio__icon">
                                 <use xlink:href="img/sprites.svg#icon-play3"></use>
                             </svg>
                         </button>
                         <h4 class="radio__heading heading-3 heading-3--light">
-                            Baby
-                        </h4>
-                    </figure>
-                </div>
-                <div class="radio__box" data-switch="4">
-                    <figure class="radio__item">
-                        <img class="radio__image" src="img/justin.jpg" alt="Baby Song image">
-                        <button class="radio__btn">
-                            <svg class="radio__icon">
-                                <use xlink:href="img/sprites.svg#icon-play3"></use>
-                            </svg>
-                        </button>
-                        <h4 class="radio__heading heading-3 heading-3--light">
-                            Baby
-                        </h4>
-                    </figure>
-                </div>
-                <div class="radio__box" data-switch="4">
-                    <figure class="radio__item">
-                        <img class="radio__image" src="img/justin.jpg" alt="Baby Song image">
-                        <button class="radio__btn">
-                            <svg class="radio__icon">
-                                <use xlink:href="img/sprites.svg#icon-play3"></use>
-                            </svg>
-                        </button>
-                        <h4 class="radio__heading heading-3 heading-3--light">
-                            Baby
-                        </h4>
-                    </figure>
-                </div>
-                <div class="radio__box" data-switch="4">
-                    <figure class="radio__item">
-                        <img class="radio__image" src="img/justin.jpg" alt="Baby Song image">
-                        <button class="radio__btn">
-                            <svg class="radio__icon">
-                                <use xlink:href="img/sprites.svg#icon-play3"></use>
-                            </svg>
-                        </button>
-                        <h4 class="radio__heading heading-3 heading-3--light">
-                            Baby
+                            Devotional
                         </h4>
                     </figure>
                 </div>
             </div>
         </section>
-        <section class="topArtists">
+        <section id="topArtists" class="topArtists">
             <div class="topArtists__header">
                 <h2 class="heading-2 heading-2--dark topArtists__mainHeading"> Artists You May Like </h2>
             </div>
             <div class="topArtists__container">
-            <div class="topArtists__box" data-switch="4">
+            <div class="topArtists__box"  data-switch="3">
                 <figure class="topArtists__item">
-                    <img class="topArtists__image" src="img/justin.jpg" alt="Baby Song image">
+                    <img class="topArtists__image" src="img/selena-gomez.jpg" alt="Selena Gomez image">
                     <button class="topArtists__btn">
                         <svg class="topArtists__icon">
                             <use xlink:href="img/sprites.svg#icon-play3"></use>
                         </svg>
                     </button>
                     <h4 class="topArtists__heading heading-3 heading-3--light">
-                        Baby
+                        Selena
                     </h4>
                 </figure>
             </div>
-            <div class="topArtists__box" data-switch="4">
+            <div class="topArtists__box" data-switch="1">
                 <figure class="topArtists__item">
-                    <img class="topArtists__image" src="img/justin.jpg" alt="Baby Song image">
+                    <img class="topArtists__image" src="img/ed_sheeran.jpg" alt="Ed Sheeran image">
                     <button class="topArtists__btn">
                         <svg class="topArtists__icon">
                             <use xlink:href="img/sprites.svg#icon-play3"></use>
                         </svg>
                     </button>
                     <h4 class="topArtists__heading heading-3 heading-3--light">
-                        Baby
+                        Ed Sheeran
                     </h4>
                 </figure>
             </div>
-            <div class="topArtists__box" data-switch="4">
+            <div class="topArtists__box" data-switch="19">
                 <figure class="topArtists__item">
-                    <img class="topArtists__image" src="img/justin.jpg" alt="Baby Song image">
+                    <img class="topArtists__image" src="img/Shraddha.jpg" alt="Shraddha Kapoor image">
                     <button class="topArtists__btn">
                         <svg class="topArtists__icon">
                             <use xlink:href="img/sprites.svg#icon-play3"></use>
                         </svg>
                     </button>
                     <h4 class="topArtists__heading heading-3 heading-3--light">
-                        Baby
+                        Shraddha
                     </h4>
                 </figure>
             </div>
-            <div class="topArtists__box" data-switch="4">
+            <div class="topArtists__box" data-switch="9">
                 <figure class="topArtists__item">
-                    <img class="topArtists__image" src="img/justin.jpg" alt="Baby Song image">
+                    <img class="topArtists__image" src="img/AyushmannKhurana.webp" alt="Ayshmann Khurana image">
                     <button class="topArtists__btn">
                         <svg class="topArtists__icon">
                             <use xlink:href="img/sprites.svg#icon-play3"></use>
                         </svg>
                     </button>
                     <h4 class="topArtists__heading heading-3 heading-3--light">
-                        Baby
+                        Ayushmann
                     </h4>
                 </figure>
             </div>
-            <div class="topArtists__box" data-switch="4">
+            <div class="topArtists__box" data-switch="6">
                 <figure class="topArtists__item">
-                    <img class="topArtists__image" src="img/justin.jpg" alt="Baby Song image">
+                    <img class="topArtists__image" src="img/arijit-singh.jpg" alt="Arjit Singh image">
                     <button class="topArtists__btn">
                         <svg class="topArtists__icon">
                             <use xlink:href="img/sprites.svg#icon-play3"></use>
                         </svg>
                     </button>
                     <h4 class="topArtists__heading heading-3 heading-3--light">
-                        Baby
+                        Arjit Singh
+                    </h4>
+                </figure>
+            </div>
+            <div class="topArtists__box" data-switch="11">
+                <figure class="topArtists__item">
+                    <img class="topArtists__image" src="img/AtifAslam.jpg" alt="Atif Aslam image">
+                    <button class="topArtists__btn">
+                        <svg class="topArtists__icon">
+                            <use xlink:href="img/sprites.svg#icon-play3"></use>
+                        </svg>
+                    </button>
+                    <h4 class="topArtists__heading heading-3 heading-3--light">
+                        Atif Aslam
+                    </h4>
+                </figure>
+            </div>
+            <div class="topArtists__box" data-switch="14">
+                <figure class="topArtists__item">
+                    <img class="topArtists__image" src="img/Mohd-rafi.jpg" alt="Mohd Rafi Sir image">
+                    <button class="topArtists__btn">
+                        <svg class="topArtists__icon">
+                            <use xlink:href="img/sprites.svg#icon-play3"></use>
+                        </svg>
+                    </button>
+                    <h4 class="topArtists__heading heading-3 heading-3--light">
+                        Mohd. Rafi
                     </h4>
                 </figure>
             </div>
@@ -1157,17 +1172,17 @@
         <footer class="footer">
             <div class="footer__box">
                 <figure class="footer__image">
-                    <img src="img/favicon_io (1)/apple-touch-icon.png" alt="Icon Footer">
+                    <img src="img/favicon_io/apple-touch-icon.png" alt="Icon Footer">
                 </figure>
             </div>
             <div class="footer__naviBox">
                 <div class="footer__navigation">
                     <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">Recommended</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Top Songs</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Top Artists</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Radio</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Recent Section</a></li>
+                        <li class="footer__item"><a href="#recommended" class="footer__link">Recommended</a></li>
+                        <li class="footer__item"><a href="#topSongs" class="footer__link">Top Songs</a></li>
+                        <li class="footer__item"><a href="#topArtists" class="footer__link">Top Artists</a></li>
+                        <li class="footer__item"><a href="#radio" class="footer__link">Radio</a></li>
+                        <li class="footer__item"><a href="#recent" class="footer__link">Recent Section</a></li>
                     </ul>
                 </div>
                 <p class="footer__copyright">
@@ -1178,12 +1193,13 @@
 
         <div class="login">
             <div class="login__box">
+                <div class="login__close">+</div>
                 <h2 class="heading-2 login__heading">Login</h2>
                 <form action="/" class="login__form">
                     <h2 class="login__email">Email Address or Username</h2>
-                    <input type="email" class="login__email--input" placeholder="abc@xyz.com">
+                    <input type="email" class="login__input login__input--active" placeholder="abc@xyz.com" required>
                     <h2 class="login__password">Password</h2>
-                    <input type="password" class="login__password--input" placeholder="Password">
+                    <input type="password" class="login__input" placeholder="Password" required>
                     <a href="#" class="login__forgot">Forgot your password</a>
                     <button type="submit" class="login__submit">Submit</button>
                 </form>
@@ -1194,22 +1210,24 @@
 
         <div class="signup">
             <div class="signup__box">
+                <div class="signup__close">+</div>
                 <h2 class="heading-2 signup__heading">Sign Up</h2>
                 <form action="/" class="signup__form">
                     <h2 class="signup__email">Email Address</h2>
-                    <input type="email" class="signup__email--input" placeholder="abc@xyz.com">
+                    <input type="email" class="signup__input signup__input--active" placeholder="abc@xyz.com" required>
                     <h2 class="signup__email">Username</h2>
-                    <input type="text" class="signup__email--input" placeholder="Username">
+                    <input type="text" class="signup__input" placeholder="Username" required>
                     <h2 class="signup__email">Password</h2>
-                    <input type="email" class="signup__email--input" placeholder="Password">
+                    <input type="password" class="signup__input" placeholder="Password" required>
                     <h2 class="signup__password">Confirm Password</h2>
-                    <input type="password" class="signup__password--input" placeholder="Confirm Password">
+                    <input type="password" class="signup__input" placeholder="Confirm Password" required>
                     <button type="submit" class="signup__submit">Sign Up</button>
                 </form>
                 <p class="signup__copyright">Copyright &copy; Prasann Sitani</p>
             </div>
         </div>
     </div>
+
     <!-- Player Extended From Aplayer Api -->
     <div id="aplayer"></div>
     <svg class="playerIcon">

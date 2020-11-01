@@ -24,9 +24,9 @@
         display: inline-block;
         width: 20rem;
         background-color: $color-primary;
-        padding: .5rem;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 3.5rem $color-primary-dark;
+        padding: 1rem .8rem 2rem; 
+        border-radius: 13px;
+        box-shadow: 0 0 1rem red;
         position: relative;
         cursor: pointer;
         z-index: 5;
@@ -45,7 +45,9 @@
 
     &__heading {
         grid-column: 1 / -1;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        margin-top: .5rem;
+        font-weight: 700;
     }
 
     &__image {
@@ -59,11 +61,11 @@
     &__btn {
         border: none;
         border-radius: 50%;
-        background-color: $color-primary-light;
+        background-color: red;
         padding: .5rem;
         position: absolute;
-        bottom: 1.7rem;
-        right: .4rem;
+        bottom: 4.4rem;
+        right: .6rem;
         transform: scale(0);
         z-index: 10;
         transition: all ease .4s;
@@ -77,6 +79,7 @@
     }
 
     &__text {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        font-weight: 400;
     }
 }

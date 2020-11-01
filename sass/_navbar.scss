@@ -11,7 +11,7 @@
         background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
         -webkit-appearance: none;
         background-position-x: 8.4rem;
-        color: #fff;
+        color: $color-grey-light-1;
         font-family: $font-heading;
         font-weight: 400;
         font-size: 1.4rem;
@@ -30,7 +30,7 @@
 
     &__language select option {
         background-color: $color-grey-dark-1;
-        color: white;
+        color: $color-grey-light-1;
         border: none;
     }
 

@@ -21,6 +21,7 @@
         z-index: 500;
         box-shadow: 0 2rem 5rem rgba(#000,.25);
         transition: all .4s ease;
+        position: relative;
     }
 
     &__heading {
@@ -79,5 +80,14 @@
         font-size: 1.5rem;
         font-family: $font-primary;
         transform: translateY(4rem);
+    }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        font-size: 3rem;
+        transform: rotate(135deg);
+        cursor: pointer;
     }
 }

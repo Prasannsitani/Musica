@@ -79,4 +79,13 @@
         font-size: 1.5rem;
         font-family: $font-primary;
     }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        font-size: 3rem;
+        transform: rotate(135deg);
+        cursor: pointer;
+    }
 }

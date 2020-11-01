@@ -29,13 +29,28 @@
         overflow: auto;
     }
 
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: .2rem;
+        width: 43rem;
+        margin: 1rem;
+    }
+
     &__btn {
         border: none;
         background-color: transparent;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     &__box {
         position: relative;
+        cursor: pointer;
     }
 
     &__icon {
@@ -44,9 +59,6 @@
         fill: $color-primary;
         margin: 0 1rem 0 .5rem;
         cursor: pointer;
-        position: absolute;
-        bottom: 1.5rem;
-        right: 4rem;
     }
 
     &__item {
@@ -72,23 +84,18 @@
     }
 
     &__heading {
-        position: absolute;
-        bottom: 1.5rem;
-        left: 1rem;
         color: white;
         transition: all .4s ease;
         cursor: pointer;
+        margin-right: auto;
 
         &:hover {
-            left: 2rem;
+            margin-left: 1rem;
         }
     }
 
     &__time {
         color: #fff;
-        position: absolute;
-        bottom: 1.5rem;
-        right: 1rem;
         font-size: 1.7rem;
         font-weight: 400;
     }
